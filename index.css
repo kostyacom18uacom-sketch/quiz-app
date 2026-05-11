@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-parchment: #f9efe4;
+  --color-vellum: #fdf9f4;
+  --color-chalk: #fdfdfd;
+  --color-ink: #3f434a;
+  --color-graphite: #2d2f34;
+  --color-slate: #656565;
+  --color-ash: #9da3af;
+  --color-silver-mist: #d9dde6;
+  --color-linen: #f0e4d6;
+  --color-blueprint: #2e77e5;
+  --color-electric-sky: #176be5;
+  --color-blossom: #fae9f4;
+  --color-buttercup: #fbf4d8;
+  --color-sage: #547358;
+  --color-terracotta: #f67748;
+  --color-mauve: #9d4d77;
+  --color-ochre: #7f6c1f;
+  --color-dusk-blue: #446aa7;
+
+  /* Typography */
+  --font-serif: "Fraunces", "Georgia", serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+
+  /* Spacing */
+  --spacing-8: 8px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-56: 56px;
+  --spacing-80: 80px;
+  --spacing-240: 240px;
+
+  /* Border Radius */
+  --radius-xl: 12px;
+  --radius-full: 50px;
+
+  /* Shadows */
+  --shadow-slite: rgba(0, 0, 0, 0.01) 0px 4px 12px 0px, rgba(0, 0, 0, 0.05) 0px 2px 6px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
+}
+
+@layer base {
+  body {
+    @apply bg-parchment text-ink font-sans antialiased;
+  }
+}
+
+/* 3D Flip Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
