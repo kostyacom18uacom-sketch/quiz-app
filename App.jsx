@@ -970,10 +970,10 @@ export default function App() {
 
   // --- RENDER ---
   return (
-    <div className="min-h-screen flex flex-col items-center py-12 px-6 max-w-[1200px] mx-auto overflow-x-hidden">
+    <div className="min-h-screen flex flex-col items-center pt-4 pb-12 px-6 max-w-[1200px] mx-auto overflow-x-hidden">
       
       {/* HEADER & MODE SWITCHER */}
-      <header className="w-full flex justify-center items-center mb-16">
+      <header className="w-full flex justify-center items-center mb-8">
         <div className="bg-linen p-1 rounded-full flex gap-1 border border-silver-mist">
           <button 
             onClick={() => setMode('all')}
