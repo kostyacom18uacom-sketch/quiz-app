@@ -958,7 +958,8 @@ export default function App() {
       type: "touch,pointer",
       onLeft: () => nextCard(),
       onRight: () => prevCard(),
-      tolerance: 50
+      tolerance: 50,
+      ignore: ".no-scrollbar"
     });
 
     return () => {
